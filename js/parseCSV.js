@@ -5,4 +5,6 @@ var req = new XMLHttpRequest();
 
 
 req.open('GET',path, true);
-req.send(null);
+req.onload = function(){
+	document.write(this.responseText);
+};
