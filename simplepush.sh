@@ -1,5 +1,5 @@
 #! /usr/bin
-if $1 -eq ""; then
+if [[ $1 -eq "" ]]; then
 	echo aaa
 fi
 git add .
